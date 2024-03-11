@@ -54,14 +54,35 @@
 
 .btn {
   padding: 0.75rem 2rem;
-  outline: none;
+  outline: #070505;
   border: none;
   font-size: 1rem;
   color: var(--white);
-  background-color: var(--primary-color);
+  background: rgba(72, 255, 0, 0.5); /* Green background with 50% opacity for a glass effect */
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
+
+.btn:hover {
+  background: rgba(0, 255, 0, 0.5); /* Neon green color with 50% opacity on hover for a glass effect */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Adding a subtle glow effect */
+}
+
+.btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  z-index: -1;
+  filter: blur(10px); /* Adding a blur effect to create a glass-like appearance */
+}
+
 
 a {
   text-decoration: none;
