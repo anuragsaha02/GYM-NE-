@@ -1,2 +1,2 @@
-# GYM-NE-
+# GYM-NE Website 
 TECH YUVA PROJECT {DEVQUEST}
